@@ -1,0 +1,12 @@
+# Render Blueprint: run the Node app from `voting_system/` (where server.js + postinstall live).
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: voting-system
+    runtime: node
+    rootDir: voting_system
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.1

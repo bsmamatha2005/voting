@@ -1,0 +1,14 @@
+{
+  "name": "voting_system1",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Workspace wrapper for voting_system app",
+  "scripts": {
+    "install:app": "npm --prefix voting_system install",
+    "start": "npm --prefix voting_system start",
+    "dev": "npm --prefix voting_system start"
+  },
+  "engines": {
+    "node": ">=20 <25"
+  }
+}
